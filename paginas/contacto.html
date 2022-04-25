@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" class="iconomenu" id="check">
+            <label class="iconomenu" for="check">
+                <span class="material-icons-round iconomenu"> menu</span>
+            </label>
+            <a href="../Index.html"><img class="logo" src="../imagenes/Logo.png" alt="Logo"></a>
+            <a href="#"><span class="material-icons-round icono carrito2"> shopping_cart</span></a>
+            <ul class="menu__lista">
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a class="boton--color" href="iniciarsesion.html">Iniciar Sesión</a></li>
+                <li><a href="#"><span class="material-icons-round icono carrito"> shopping_cart</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="maincontacto">
+        <h1 class="titulo tituloMovil">Comunicate con Nosotros</h1>
+        <section class="contacto">
+            <p>¿querés realizar un encargo? o ¿Querés realizar un pedido por mayor? dejanos tu mensaje y enseguida tomamos tu pedido.</p>
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="campo" id="nombre" name="nombre" placeholder="Nombre">
+                
+                <label for="correo">Correo</label>
+                <input type="email" class="campo" id="correo" name="correo" placeholder="Correo@gmail.com" required>  
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" class="campo" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+                <button class="contacto__boton boton">Enviar</button>
+            </form>
+        </section>
+        
+        <section class="ubicacion">
+            <h2 class="ubicacion__tiulo">Encontranos en:</h2>
+            <iframe class="ubicacion__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d384681.2257262388!2d-71.6207823034111!3d-41.127494509515074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sSan%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1648142231274!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <div  class="piePag">
+            <div class="piePag__redes">
+                <h3>Redes Sociales</h3>
+                <div >
+                    <a  href="https://www.instagram.com/?hl=es-la" target="_bank"><img class="piePag__redes--img" src="../imagenes/Logo Instagram.png" alt="Instagram"></a>
+                    <a  href="https://es-la.facebook.com/" target="_bank"><img class="piePag__redes--img" src="../imagenes/Logo Facebook.png" alt="Facebook"></a>
+                    <a  href="https://www.youtube.com/"target="_bank"><img class="piePag__redes--img" src="../imagenes/Logo Youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+
+            <div class="piePag__pagos">
+                <h3>Medios de Pagos</h3>
+                <div class="piePag__pagos__cont">
+                    <img src="../imagenes/p1mercadopago@2x.png" alt="">
+                    <img src="../imagenes/p2visa.png" alt="">
+                    <img src="../imagenes/p3mastercard@2x.png" alt="">
+                    <img src="../imagenes/p5banelco@2x.png" alt="">
+                    <img src="../imagenes/p6cabal@2x.png" alt="">
+                    <img src="../imagenes/p4amex@2x.png" alt="">
+                    <img src="../imagenes/p7diners@2x.png" alt="">
+                    <img src="../imagenes/p8tarjeta-naranja@2x.png" alt="">
+                    <img src="../imagenes/p9tarjeta-shopping@2x.png" alt="">
+                    <img src="../imagenes/p10argencard@2x.png" alt="">
+                    <img src="../imagenes/p11nativa@2x.png" alt="">
+                    <img src="../imagenes/p12cencosud@2x.png" alt="">
+                    <img src="../imagenes/p13rapipago@2x.png" alt="">
+                    <img src="../imagenes/p14pagofacil@2x.png" alt="">
+                    <img src="../imagenes/p15link@2x.png" alt="">
+                </div>
+            </div>
+            
+            <div class="piePag__contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <li class="piePag__contacto--texto">
+                        <span class="material-icons-round"> mail_outline</span>
+                        Cupcakes@gmail.com
+                    </li>
+                    <li class="piePag__contacto--texto">
+                        <span class="material-icons-round"> phone</span>
+                        +54112345678
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h5 class="piePag__copy" >&copy;Derechos Reservados</h5>
+    </footer>
+    
+</body>
+</html>
