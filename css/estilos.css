@@ -7,7 +7,6 @@
 
 /* --- Contenido General de la Página--- */
 body {
-  /* background-color: rgb(255, 230, 210); */
   background-color: rgb(254, 240, 212);
   text-align: center;
   font-family: "Poiret One";
@@ -49,6 +48,42 @@ header{
 .logo {
   width: 160px;
 }
+.logo:hover{
+-webkit-animation: jello-vertical 1s both;
+animation: jello-vertical 1s both;
+}
+
+@-webkit-keyframes jello-vertical {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
 .carrito2{
   display: none;
 }
@@ -76,6 +111,11 @@ nav{
 }
 .carrito{
   margin-top: 9px;
+}
+.carrito:hover{
+  display: inline-block;
+  animation: bounce; 
+  animation-duration: 1s; 
 }
 
 li {
@@ -131,12 +171,20 @@ li a:hover {
   width: 50%;
   margin: 0 5%;
 }
-
+.presentacion__imagen--div{
+  overflow: hidden;
+  border-radius: 40px;
+  height: 380px;
+  width: 300px;
+}
 .presentacion__imagen {
   height: 380px;
   width: 300px;
   border-radius: 20px;
-  margin: 40px 0;
+  transition: transform 0.3s ease;
+}
+.presentacion__imagen:hover{
+  transform: scale(1.05);
 }
 
 /* --- Barra Info --- */
@@ -197,6 +245,10 @@ li a:hover {
 }
 .producto__imagen {
   width: 90%;
+  transition: transform 0.3 ease;
+}
+.producto:hover{
+  transform: scale(1.05);
 }
 .producto__titulo {
   font-size: 29px;
@@ -512,6 +564,10 @@ nav{
 }
 #check:checked ~ .menu__lista {      
   margin-right: 10%;
+  transition: all 0.3s cubic-bezier(0.16, 0.68, 0.43, 0.99)
+}
+.producto:hover{
+  transform: none;
 }
 
 /* ---- entrada --- */
