@@ -6,15 +6,21 @@
 }
 
 /* --- Contenido General de la Página--- */
+html{
+  height: 100%;
+}
+
 body {
   background-color: rgb(254, 240, 212);
   text-align: center;
   font-family: "Poiret One";
   font-size: 21px;
+  min-height: 100%;
 }
 
-main {
-  margin-top: 60px;
+.contenidos {
+  /* margin-top: 60px; */
+  margin-top: 6rem;
 }
 
 h1 {
@@ -47,6 +53,7 @@ header{
 }
 .logo {
   width: 160px;
+  padding-bottom: 8px;
 }
 .logo:hover{
   animation: jello-vertical 0.9s both;
@@ -92,6 +99,8 @@ nav{
   justify-content: flex-end;
   align-items: center;
   gap:16px;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .iconomenu{
@@ -136,9 +145,11 @@ li a:hover {
 }
 
 
+
+
 /* --- Entrada --- */
 .presentacion {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,7 +278,8 @@ li a:hover {
   border-style: none;
 }
 .boton:hover {
-  background-color: rgb(236, 47, 97) 
+  background-color: rgb(236, 47, 97);
+  color: #fff;
 }
 
 .boton_vermas {     
@@ -282,6 +294,7 @@ li a:hover {
 }
 .boton_vermas:hover {
   background-color: rgb(67, 153, 10);  
+  color: #fff;
 }
 
 /* --- Perfil--- */
@@ -315,6 +328,7 @@ li a:hover {
   margin-left: 10%;
 }
 
+
 /* --- Pie de Página --- */
 h3{
   font-size: 30px;
@@ -323,7 +337,7 @@ h3{
 }
 footer {
   background-color: rgb(238, 143, 143);  
-
+  margin-top: auto;
   color: rgb(247, 235, 207);
   width: 100%;
 }
@@ -498,9 +512,13 @@ aside{
   max-width: 250px;
 }
 
+/* ---  carrusel  --- */
+.carousel{
+  display: none;
+}
 
 
-/*---------------    Media Queries   --------------- */
+/*--------------------    Media Queries   -------------------- */
 
 @media screen and (max-width: 768px) {
 /* ----  menu de navegacion  ---- */
@@ -527,7 +545,10 @@ header{
 }
 .carrito2{
   display: block;
-  margin-top: 6px;
+  margin-top: 2px;
+}
+.carrito2:hover{
+  color: rgb(126, 11, 11);
 }
 nav{
   position: relative;
@@ -609,3 +630,25 @@ margin-top: 4%;
 
 }
 
+
+/*-----------------    Media Queries Movil  ----------------- */
+
+@media screen and (max-width: 425px) {
+
+  /* -------carruse------- */
+  
+  .carousel{
+    display: block;
+    margin: 18% auto;
+    }
+    
+  .flecha{
+    border-radius: 10px;
+    padding:1.5rem;
+    }
+  
+  .producto-div{
+    display: none;
+  }
+  
+  }
