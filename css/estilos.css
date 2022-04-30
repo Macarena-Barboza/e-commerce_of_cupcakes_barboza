@@ -19,7 +19,6 @@ body {
 }
 
 .contenidos {
-  /* margin-top: 60px; */
   margin-top: 6rem;
 }
 
@@ -141,7 +140,12 @@ li a:hover {
   color:#fff;
   background-color:rgb(174, 31, 31);     
   border-radius: 15px;
+
 }
+/* .div-menu{
+  display: none;
+} */
+
 
 /* --- Entrada --- */
 .presentacion {
@@ -267,7 +271,6 @@ li a:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
-  background-color: rgb(249, 131, 131);       
   background-color: #f1737b;         
   padding: 8px 10px;  
   border-radius: 17px;  
@@ -437,7 +440,7 @@ form{
 /* --------  Preguntas.HTML  -------- */
 
 .preguntas{
-  margin: 30px 15% 70px;
+  margin: 40px 8% 9%;
 }
 .preguntas__lista{
   text-align: start;
@@ -446,6 +449,22 @@ form{
   color: rgb(181, 5, 58);
 }
 
+.accordion-button{
+  background-color: rgb(254, 240, 212);
+  font-size: 22px;
+}
+.accordion-button:focus {
+  border-color:none;
+  box-shadow:none;
+}
+.accordion-flush .accordion-item .accordion-button {
+  border-radius:20px;}
+
+.accordion-button:not(.collapsed){
+  background-color: #f68a918b;
+  color: #fff;
+  padding: 9px 2%;
+}
 
 
 /* -------  Iniciar Sesión.HTML  -------- */
@@ -524,7 +543,6 @@ header{
   top: 0;
   z-index: 10;
 }
-
 .logo{
   justify-content: center;
   margin: 0;
@@ -554,26 +572,23 @@ nav{
   right: 20px;
   background-color: rgba(64, 9, 9, 0.844);
   width: 100%;
-  margin-top: 544px;
+  margin-top: 581px;
   padding: 16px;
   flex-direction: column;
   gap: 29px;
   align-items: center;
   margin-right: 120%;
 }
-
 .menu__lista li{
   border-top: 1px solid rgba(255, 255, 255, 0.189);
   width: 100%;
   padding-top: 22px;
 }
-
 #check{
   display: none;
 }
 #check:checked ~ .menu__lista {      
   margin-right: 10%;
-  transition: all 0.3s cubic-bezier(0.16, 0.68, 0.43, 0.99)
 }
 .producto:hover{
   transform: none;
@@ -632,7 +647,6 @@ margin-top: 4%;
 @media screen and (max-width: 425px) {
 
   /* -------carruse------- */
-  
   .carousel{
     display: block;
     margin: 18% auto;
@@ -641,7 +655,13 @@ margin-top: 4%;
   .flecha{
     border-radius: 10px;
     padding:1.5rem;
+    
     }
+  .flecha:active{
+    background-color: rgba(74, 74, 74, 0.701);
+    border-radius: 50%;
+    padding: 20px;
+  }
   
   .producto-div{
     display: none;

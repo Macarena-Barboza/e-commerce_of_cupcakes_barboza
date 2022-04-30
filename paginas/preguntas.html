@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -35,41 +36,115 @@
 
     <main>
         <h1 class="titulo tituloMovil">Preguntas Frecuentes</h1>
-        <ul class="preguntas">
-            <li class="preguntas__lista"> 
-                <h2 >¿Cuál es el monto mínimo para el envio?</h2>
-                <p>Para realizar el envio el monto mínimo debe superar los $500.</p>
-            </li>
-            
-            <li class="preguntas__lista"> 
-                <h2 >¿Cómo realizan los envio?</h2>
-                <p>Realizamos entregas a domicilio, a través de nuestra propia logística con autos refrigerados.</p>
-            </li>
 
-            <li class="preguntas__lista">
-                <h2 >¿Cómo puedo encargar?</h2> 
-                <p>En la seccion de <a class="preguntas__link" href="contacto.html" >contacto</a> dejanos tu mensaje y enseguida tomamos tu pedido.</p> 
-            </li>
+        <section class="preguntas">
 
-            <li class="preguntas__lista">
-                <h2 >¿Dónde puedo retirar el pedido?</h2> 
-                <p>En nuestro Local en San Carlos de Bariloche se puede retirar todos los pedidos.</p> 
-            </li>
+            <div class="accordion accordion-flush mt-3 " id="accordionFlushExample ">
+                <div class="accordion-item bg-transparent border-0">
+                    <h2 class="accordion-header" id="flush-heading1">
+                        <button class="accordion-button collapsed"  data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                            ¿Cuál es el monto mínimo para el envio?
+                        </button>
+                    </h2>
+                </div>
+                <div id="flush-collapse1" class="accordion-collapse collapse text-start " aria-labelledby="flush-heading1"data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-2 ">
+                        <p>Para realizar el envio el monto mínimo debe superar los $500.</p>
+                    </div>
+                </div>
+            </div>
 
-            <li class="preguntas__lista"> 
-                <h2 >¿Cómo puedo pagar mi pedido?</h2> 
-                <p>Podes pagar con tarjeta de crédito, débito y efectivo, mediante la Plataforma de Mercado Pago. En el Mostrador Cupcakes podes pagar con tarjeta de débito, QR o en efectivo.</p> 
-            </li>
+            <div class="accordion accordion-flush mt-3 " id="accordionFlushExample ">
+                <div class="accordion-item bg-transparent border-0">
+                    <h2 class="accordion-header" id="flush-heading2">
+                        <button class="accordion-button collapsed border-top"  data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                            ¿Cómo realizan los envio?
+                        </button>
+                    </h2>
+                </div>
+                <div id="flush-collapse2" class="accordion-collapse collapse text-start " aria-labelledby="flush-heading2"data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-2 ">
+                            <p>Realizamos entregas a domicilio, a través de nuestra propia logística con autos refrigerados.</p>
+                        </div>
+                    </div>
+            </div>
 
-            <li class="preguntas__lista">
-                <h2 >¿Cuál es el tiempo de entrega?</h2> 
-                <p>Tratamos de mandarlo desde el momento que se realiza la comprar, aunque puede llegar a tardar como máximo 4hs.</p> 
-            </li>
+            <div class="accordion accordion-flush mt-3 " id="accordionFlushExample ">
+                <div class="accordion-item bg-transparent border-0">
+                    <h2 class="accordion-header" id="flush-heading3">
+                        <button class="accordion-button collapsed border-top"  data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                            ¿Cómo puedo encargar?
+                        </button>
+                    </h2>
+                </div>
+                <div id="flush-collapse3" class="accordion-collapse collapse text-start " aria-labelledby="flush-heading3"data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-2 ">
+                        <p>En la seccion de <a class="preguntas__link" href="contacto.html" >contacto</a> dejanos tu mensaje y enseguida tomamos tu pedido.</p>
+                    </div>
+                </div>
+            </div>
 
-            <li class="preguntas__lista"> <h2 >¿Cuál es el horario de atención?</h2> 
-                <p>Lunes a Domingo y Feriados de 9 a 20hs.</p> 
-            </li>
-        </ul>
+            <div class="accordion accordion-flush mt-3 " id="accordionFlushExample ">
+                <div class="accordion-item bg-transparent border-0">
+                    <h2 class="accordion-header" id="flush-heading4">
+                        <button class="accordion-button collapsed border-top"  data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                            ¿Dónde puedo retirar el pedido?
+                        </button>
+                    </h2>
+                </div>
+                <div id="flush-collapse4" class="accordion-collapse collapse text-start " aria-labelledby="flush-heading4"data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-2 ">
+                        <p>En nuestro Local en San Carlos de Bariloche se puede retirar todos los pedidos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-3 " id="accordionFlushExample ">
+                <div class="accordion-item bg-transparent border-0">
+                    <h2 class="accordion-header" id="flush-heading5">
+                        <button class="accordion-button collapsed border-top"  data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                            ¿Cuál es el tiempo de entrega?
+                        </button>
+                    </h2>
+                </div>
+                <div id="flush-collapse5" class="accordion-collapse collapse text-start " aria-labelledby="flush-heading5"data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-2 ">
+                        <p>Tratamos de mandarlo desde el momento que se realiza la comprar, aunque puede llegar a tardar como máximo 4hs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-3 " id="accordionFlushExample ">
+                <div class="accordion-item bg-transparent border-0">
+                    <h2 class="accordion-header" id="flush-heading6">
+                        <button class="accordion-button collapsed border-top"  data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                            ¿Cómo puedo pagar mi pedido?
+                        </button>
+                    </h2>
+                </div>
+                <div id="flush-collapse6" class="accordion-collapse collapse text-start " aria-labelledby="flush-heading6"data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-2 ">
+                        <p>Podes pagar con tarjeta de crédito, débito y efectivo, mediante la Plataforma de Mercado Pago. En el Mostrador Cupcakes podes pagar con tarjeta de débito, QR o en efectivo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush mt-3 " id="accordionFlushExample ">
+                <div class="accordion-item bg-transparent border-0">
+                    <h2 class="accordion-header" id="flush-heading7">
+                        <button class="accordion-button collapsed border-top"  data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                            ¿Cuál es el horario de atención?
+                        </button>
+                    </h2>
+                </div>
+                <div id="flush-collapse7" class="accordion-collapse collapse text-start " aria-labelledby="flush-heading7"data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-2 ">
+                        <p>Lunes a Domingo y Feriados de 9 a 20hs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -121,6 +196,6 @@
 
         <h5 class="piePag__copy" >&copy;Derechos Reservados</h5>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
