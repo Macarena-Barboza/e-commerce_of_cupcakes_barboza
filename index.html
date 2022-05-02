@@ -17,22 +17,61 @@
 
 <body>
     <header>       
-            <nav>
-                <input type="checkbox" class="iconomenu" id="check">
-                <label class="iconomenu" for="check">
-                    <span class="material-icons-round iconomenu"> menu</span>
-                </label>
-                <a href="index.html"><img class="logo" src="imagenes/Logo.png" alt="Logo"></a>
-                <a href="#"><span class="material-icons-round icono carrito2"> shopping_cart</span></a>
-                <ul class="menu__lista">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="paginas/productos.html">Productos</a></li>
-                    <li><a href="paginas/contacto.html">Contacto</a></li>
-                    <li><a href="paginas/preguntas.html">Preguntas</a></li>
-                    <li><a class="boton--color" href="paginas/iniciarsesion.html">Iniciar Sesión</a></li>
-                    <li><a href="#"><span class="material-icons-round icono carrito"> shopping_cart</span></a></li>
-                </ul>
+        <nav>
+            <a href="index.html"><img class="logo" src="imagenes/Logo.png" alt="Logo"></a>
+            <ul class="menu__lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paginas/productos.html">Productos</a></li>
+                <li><a href="paginas/contacto.html">Contacto</a></li>
+                <li><a href="paginas/preguntas.html">Preguntas</a></li>
+                <li><a class="boton--color" href="paginas/iniciarsesion.html">Iniciar Sesión</a></li>
+                <li><a href="#"><span class="material-icons-round icono carrito"> shopping_cart</span></a></li>
+            </ul>
+        </nav>
+
+            <!---------------------- menu responsive  ----------------------------------------------->
+        <div class="div-menu">
+            <nav class="navbar navbar-light navbar-dark fixed-top ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar ">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="index.html"><img class="logo" src="imagenes/Logo.png" alt="Logo"></a>
+                    <a href="#"><span class="material-icons-round icono carrito2"> shopping_cart</span></a>
+                    <div class="offcanvas offcanvas-start bg-danger bg-gradient bg-opacity-75" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header bg-danger bg-gradient bg-opacity-50" >
+                            <img class="sesion__titulo--img d-block mx-auto h-100 d-inline-block w-50 p-3" src="imagenes/Logo.png" alt="cupcakes">
+                                <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item ">
+                                    <a class="nav-link"  href="index.html">Inicio</a>
+                                </li>
+                                <span class="linea mt-2"> </span>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/productos.html">Productos</a>
+                                </li>
+                                <span class="linea mt-2"> </span>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+                                </li>
+                                <span class="linea mt-2"> </span>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/preguntas.html">Preguntas</a>
+                                </li>
+                                <span class="linea mt-2"> </span>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/iniciarsesion.html">Iniciar Sesión</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
+        </div>
+
+<!---------------------------------------------------------------------------------------------------------- -->
     </header>
 
     <main class="contenidos">
