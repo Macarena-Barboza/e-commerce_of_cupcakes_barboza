@@ -1,0 +1,126 @@
+/* --- Barra Info --- */
+.barraInfo {
+    background-color: rgb(252, 243, 233);
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20%;
+    
+    &__texto{
+        // display: flex;
+        // justify-content: start;
+        // align-items: center;
+        // gap: 5px;
+        // font-weight: bold;
+        // line-height: 37px;
+        // text-align: center;
+        // color: rgb(153, 13, 13);
+
+        color: yellow;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 37px;
+        text-align: center;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+    }
+    &__p{
+        font-size: 18px;
+        color: rgb(92, 92, 92);
+        line-height: 0;
+    }
+    &__cont{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.icono{
+    padding-right:  6px;
+    font-size: 26px;
+    text-align: center;
+}
+.contenido{
+    margin-top: 100px;
+}
+
+
+/* --- Sección de Productos --- */
+.producto__contenedor{
+    margin: 60px 0;
+    padding: 20px 10%;
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background-color: $color-a-hover;
+    text-align: center;
+    width: 300px;
+    padding: 20px 10px;
+    border-radius: 30px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__imagen {
+        width: 90%;
+        transition: transform 0.3 ease;
+    }
+    &:hover{
+        transform: scale(1.05);
+    }
+    &__titulo {
+        font-size: 29px;
+    }
+    &__descripcion {
+        font-size: 19px;
+    }
+    &__boton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+}
+
+.boton  {
+    color: $color-a-hover;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: $color-boton-comprar;         
+    padding: 8px 10px;  
+    border-radius: 17px;  
+    border-style: none;
+
+    &:hover {
+        background-color: $color-boton-comprar-hover;
+        color: $color-a-hover;
+    }
+    
+    &_vermas {     
+        color: $color-a-hover;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: $color-boton-vermas;         
+        padding: 8px 20px;       
+        border-radius: 20px;         
+        border-style: none;
+    }
+    &_vermas:hover {
+        background-color: $color-boton-vermas-hover;  
+        color: $color-a-hover;
+    }
+}

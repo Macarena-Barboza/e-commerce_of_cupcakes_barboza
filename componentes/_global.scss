@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* --- Contenido General de la Página--- */
+html{
+    height: 100%;
+}
+
+body {
+    background-color: $bg-fondo;
+    text-align: center;
+    font-family: "Poiret One";
+    font-size: 21px;
+}
+
+.contenidos {
+    margin-top: 6rem;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 22px;
+}
+
+p {
+    margin: 20px 0px;
+}
+
+
+/* ---Menu de Navegación ---*/
+header{
+    background-color: $bg-menu;        
+    min-height: 100px;
+    width: 100%;
+    padding: 0px 5% 10px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 160px;
+    padding-bottom: 8px;
+
+    &:hover{
+        animation: jello-vertical 0.9s both;
+}
+
+}
+@keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.carrito2{
+    display: none;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav__link::after{
+    content: " " ;
+    height: 1px;
+    width: 0;
+    background-color:$color-link ;
+    display: block;
+    transition: all 0.3s;
+}
+.nav__link:hover::after{
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:16px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.iconomenu{
+    display: none;
+}
+
+.carrito{
+    margin-top: 9px;
+
+    &:hover{
+        display: inline-block;
+        animation: bounce; 
+        animation-duration: 1s; 
+    }
+}
+
+li {
+    list-style-type: none;
+
+    & a:hover {
+        color: $color-link;
+    }
+}
+
+a {
+    color: $color-a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton--color{
+    background-color:$color-boton;   
+    padding: 9px 6px;
+    border-radius: 15px;
+
+    &:hover{
+        color:$color-a-hover;
+        background-color:$color-boton-hover;     
+        border-radius: 15px;
+    }
+}
+
+.div-menu{
+    display: none;
+}
+
+
+/* ---  carrusel  --- */
+.carousel{
+    display: none;
+}
+
+
+
+/* --- Pie de Página --- */
+h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-shadow: $textshadow;
+}
+footer {
+    background-color: $bg-menu;  
+    margin-top: auto;
+    color: $color-a;
+    width: 100%;
+}
+.piePag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    &__redes--img{
+        width: 38px;
+        height: auto;
+    }
+    
+    &__pagos__cont{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(40px, 1fr));
+        gap: 4px;
+    }
+    
+    &__pagos img{
+        width: 40px;
+        height: 24px;
+    }
+
+    &__contacto--texto{
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 37px;
+        text-align: center;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    &__copy{
+        font-size: 16px;
+        background-color: $color-copy;      
+        padding: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+/*--------------------    Media Queries   -------------------- */
+
+@media screen and (max-width: 768px) {
+    /* ----  menu de navegacion  ---- */
+header{
+    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}  
+nav{
+    display: none;
+    position: relative;
+}  
+
+.navbar{
+    padding: 1rem 3% 0;
+}                      
+.logo{
+    justify-content: center;
+    margin: 0;
+    width: 160px;
+}  
+.iconomenu{
+    display: flex;
+    font-size: 35px;
+    margin-top: 6px;
+    color: $color-a;
+    cursor: pointer;
+}  
+.carrito{
+    display: none;
+}  
+.carrito2{
+    display: block;
+    margin-bottom: 2px;
+
+    &:hover{
+        color: $color-a-hover;
+    }  
+}  
+
+.menu__lista{
+    position: absolute;
+    right: 20px;
+    background-color: rgba(64, 9, 9, 0.844);
+    width: 100%;
+    margin-top: 581px;
+    padding: 16px;
+    flex-direction: column;
+    gap: 29px;
+    align-items: center;
+    margin-right: 120%;
+
+    & li{
+        border-top: 1px solid rgba(255, 255, 255, 0.189);
+        width: 100%;
+        padding-top: 22px;
+    }  
+}  
+.producto:hover{
+    transform: none;
+}  
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: $color-a;
+
+    &:active{
+        color: $color-a-hover;
+    }  
+}  
+
+/*---- barra info ---- */
+.barra{
+    display: none;
+}
+
+.barra-movil{
+    display: block;
+}
+
+
+/*---- pie de pagina ---- */
+.piePag{
+    gap: 40px;
+}  
+
+
+/* ----------  Contacto.HTML  -------- */
+form{
+padding: 5%;
+}  
+.ubicacion{
+margin-top: 4%;
+
+    &__mapa{
+    width: 80%;
+    }  
+}  
+
+/* -------  Iniciar Sesión.HTML  ------- */
+.sesion{
+    margin: 0 4%;
+    &__from{
+        padding: 2%;
+    }  
+}  
+
+}  
+
+
+
+
+/*-----------------    Media Queries Movil  ----------------- */
+
+@media screen and (max-width: 425px){
+
+/* -------carrusel------- */
+.carrusel-movil{
+    display: block;
+    margin: 18% auto;
+    }
+
+.flecha{
+    border-radius: 10px;
+    padding:1.5rem;
+
+    &:active{
+        background-color: rgba(74, 74, 74, 0.701);
+        border-radius: 50%;
+        padding: 20px;
+    }
+}
+
+.producto-div{
+    display: none;
+}
+
+}
