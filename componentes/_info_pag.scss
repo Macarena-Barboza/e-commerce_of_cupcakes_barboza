@@ -1,16 +1,16 @@
 /* --- Entrada --- */
 .presentacion {
-    min-height: 80vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    &__titulo{
+    &__titulo {
         font-size: 80px;
         padding-bottom: 30px;
     }
-    &__div{
+    &__div {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -18,13 +18,13 @@
         margin: 20px 8%;
         min-width: 320px;
     }
-    
-    &__texto { 
+
+    &__texto {
         text-align: center;
         width: 50%;
         margin: 0 5%;
     }
-    &__imagen--div{
+    &__imagen--div {
         overflow: hidden;
         border-radius: 40px;
         height: 380px;
@@ -36,17 +36,13 @@
         border-radius: 20px;
         transition: transform 0.3s ease;
     }
-    &__imagen:hover{
+    &__imagen:hover {
         transform: scale(1.05);
     }
 }
 
-
-
-
-
 /* --- Perfil--- */
-.linea{
+.linea {
     height: 1px;
     background-color: #f1737b54;
     display: block;
@@ -54,21 +50,19 @@
     margin-top: 120px;
     margin-left: 10%;
 }
-.perfil{
+.perfil {
     margin: 0 auto;
     padding: 60px 100px 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    &__texto{
+    @include content(center);
+    flex-wrap: nowrap;
+    &__texto {
         min-width: 400px;
         text-align: center;
         margin: 5%;
         display: flex;
         align-items: center;
     }
-    &__imagen{
+    &__imagen {
         min-width: 270px;
         height: 270px;
         border-radius: 50%;
@@ -77,37 +71,34 @@
     }
 }
 
-
 @media screen and (max-width: 768px) {
+    /* ---- entrada --- */
+    .presentacion {
+        &__div {
+            flex-direction: column-reverse;
+        }
 
-/* ---- entrada --- */
-.presentacion{
-    
-    &__div{
-        flex-direction: column-reverse;
+        &__texto {
+            width: 100%;
+            padding: 0px 0px;
+        }
     }
-    
-    &__texto{
+
+    .div-menu {
+        @extend .barra-movil;
+    }
+
+    /* ---- perfil ---- */
+    .perfil {
+        flex-direction: column;
         width: 100%;
-        padding: 0px 0px;
-        }  
-}  
+        padding: 10%;
 
-.div-menu{
-    display: block;
-}  
-
-/* ---- perfil ---- */
-.perfil{
-    flex-direction: column;
-    width: 100%;
-    padding: 10%;
-
-    &__texto{
-        min-width: 240px;
-    }  
-    &__imagen{
-        margin: auto;
-    }  
-}  
+        &__texto {
+            min-width: 240px;
+        }
+        &__imagen {
+            margin: auto;
+        }
+    }
 }
