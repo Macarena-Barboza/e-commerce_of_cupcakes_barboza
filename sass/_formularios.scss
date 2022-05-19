@@ -1,0 +1,125 @@
+/* -----------  Contacto.HTML  ----------- */
+.titulo {
+    margin-top: 9rem;
+}
+.contacto {
+    margin: 2%;
+
+    &__boton {
+        height: 45px;
+        margin: 10px;
+        font-size: 20px;
+        font-family: "Poiret One";
+    }
+}
+label {
+    text-align: start;
+    margin: 10px;
+}
+form {
+    background-color: $color-a-hover;
+    max-width: 700px;
+    height: 450px;
+    margin: 3% auto;
+    padding: 15px 3%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.campo {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: "Poiret One";
+    font-size: 16px;
+
+    &:focus {
+        border-color: $color-boton-comprar-hover;
+        outline: none;
+    }
+}
+.ubicacion {
+    margin-top: 3rem;
+    &__mapa {
+        width: 60%;
+        max-height: 400px;
+        margin: 30px;
+        border-radius: 30px;
+    }
+}
+
+/* -------  Iniciar Sesión.HTML  -------- */
+.sesion {
+    padding-top: 20px;
+
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+
+        &--img {
+            width: 80px;
+            &:hover {
+                animation: tada 1s;
+            }
+        }
+        & h2 {
+            padding-top: 20px;
+        }
+    }
+    &__from {
+        max-width: 500px;
+        max-height: 480px;
+        border-radius: 40px;
+        margin: 20px auto;
+        padding: 22px 2, 7% 0;
+    }
+    &__campo {
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        padding: 17px;
+        font-family: "Poiret One";
+        font-size: 20px;
+    }
+    &__link {
+        text-decoration: none;
+        &:hover {
+            color: $color-boton-comprar-hover;
+            font-weight: bold;
+        }
+    }
+}
+.titulo-from {
+    font-size: 35px;
+}
+.boton--sesion {
+    background-color: rgb(250, 0, 75);
+    color: blanchedalmond;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+
+    &:hover {
+        background-color: $color-boton-comprar-hover;
+    }
+}
+.sesion__link {
+    color: $color-boton-hover;
+    font-size: 17px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    &:hover {
+        color: $color-boton;
+    }
+}
+aside {
+    margin: 80px auto;
+    padding-bottom: 30px;
+}
+.app {
+    max-width: 250px;
+}
