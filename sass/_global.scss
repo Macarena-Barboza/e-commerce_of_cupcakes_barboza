@@ -311,10 +311,6 @@ footer {
             padding-top: 22px;
         }
     }
-    .producto:hover {
-        transform: none;
-    }
-
     .navbar-dark .navbar-nav .nav-link {
         color: $color-a-hover;
         &:active {
@@ -334,6 +330,9 @@ footer {
     .piePag {
         gap: 40px;
     }
+    .ubicacion__mapa {
+        width: 85%;
+    }
 
     /* -------  Iniciar Sesión.HTML  ------- */
     .sesion {
@@ -350,6 +349,7 @@ footer {
 
 @media screen and (max-width: 425px) {
     /* -------carrusel------- */
+
     .carrusel-movil {
         display: block;
         margin: 18% auto;
@@ -365,7 +365,6 @@ footer {
             padding: 20px;
         }
     }
-
     .producto-div {
         display: none;
     }

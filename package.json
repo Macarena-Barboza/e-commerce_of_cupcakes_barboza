@@ -1,7 +1,7 @@
 {
   "name": "e-commerce_of_cupcakes_barboza",
   "version": "1.0.0",
-  "description": "Nos dedicamos vender Cupcake de exquisitos sabores, vas a encontrar de vainilla, chocolate y más pedí el que mas te guste y te lo enviamos a tu casa",
+  "description": "Hola somos Cupcakes, nos dedicamos vender Cupcakes de exquisitos sabores, vas a encontrar de vainilla, chocolate y más. Pedí el que mas te guste y te lo enviamos a tu casa",
   "main": "index.js",
   "scripts": {
     "start": "sass sass/style.scss ./css/style.css -w --no-source-map -s compressed"
